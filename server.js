@@ -7,11 +7,11 @@ const userRoute = require("./routes/userRoute");
 const adminRoute = require("./routes/adminRoute");
 const doctorRoute = require("./routes/doctorsRoute");
 const path = require("path");
+const {JWT_SECRET , MONGO_URL} = require('./config/keys')
 
 app.use("/api/user", userRoute);
 app.use("/api/admin", adminRoute);
 app.use("/api/doctor", doctorRoute);
-
 
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.get("*", function (_, res) {
