@@ -1,7 +1,6 @@
 {
   "name": "sheyhealthy",
   "version": "1.0.0",
-  "description": "Go live :: https://appointment-from-doc-apps-dem.herokuapp.com/login",
   "main": "index.js",
   "engines": {
     "node": "16.15"
